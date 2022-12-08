@@ -64,9 +64,9 @@ def get_max_Duracion(anio,plataforma,tipo):
             gmd = datos[datos['Plataforma'] == plataforma][datos['Anio_estreno'] == anio][datos['Tipo'] == tipo_MoS].groupby(['Plataforma', 'Tipo', 'Anio_estreno'])['Duracion'].idxmax()
             duracion = datos['Duracion'].get(gmd[0]) 
             titulo = datos['Titulo'].get(gmd[0])
-            return (f'El Título es {titulo} y su duración es de {duracion} {tipo}')
+            return (f'El Título es {titulo} y su duración es de {duracion} {tipo}.')
     else:
-        return (f'Los parámetros ingresados son erróneos')
+        return (f'Los parámetros ingresados son erróneos.')
     
     
     
@@ -80,7 +80,7 @@ def get_count_platform(plataforma):
         #gcp = pd.DataFrame(gcp)
         return gcp
     else:
-        return (f'Los parámetros ingresados son erróneos')
+        return (f'Los parámetros ingresados son erróneos.')
 
 
 
@@ -92,7 +92,7 @@ def get_listedin(genero):
     gl.reset_index(inplace=True)
     gl.sort_values(by='Titulo', inplace=True, ascending=False)
     gl.reset_index(inplace=True, drop=True)
-    return gl.iloc[0]
+    return (f' El género {genero} se repite con mayor frecuencia en la plataforma {gl.iloc[0]} veces.')
 
 
 
