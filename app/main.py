@@ -1,8 +1,6 @@
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
 import pandas as pd
-import numpy as np
-import re
 
 #IMPORTACIÓN DE CSV
 datos = pd.read_csv('./base_plataformas.csv', engine='python', decimal='.')
