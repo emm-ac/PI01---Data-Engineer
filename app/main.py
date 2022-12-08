@@ -20,27 +20,27 @@ async def index():
 </head>
 <body>
     <br>
-    <h2 style="font-family: Verdana">API con información de series y películas en las plataformas de Amazon, Disney+, Hulu y Netflix</h2>
-    <h3 style="font-family: Verdana">Cómo hacer las consultas:</h3>
+    <h2 style="font-family: Calibri Light">API con información de series y películas en las plataformas de Amazon, Disney+, Hulu y Netflix</h2>
+    <h3 style="font-family: Calibri Light">Cómo hacer las consultas:</h3>
     <br>
-    <h4 style="font-family: Verdana">Para conocer la máxima duración por año, por plataforma y según tipo de film (película= min / serie= season):</h4>
-    <p5 style="font-family: Verdana">/get_max_duration/AÑO/PLATAFORMA/TIPO</p5><br>
-    <p5 style="font-family: Verdana">Por ej: /get_max_duration/2018/Hulu/min</p5>
+    <h4 style="font-family: Calibri Light">Para conocer la máxima duración por año, por plataforma y según tipo de film (película= min / serie= season):</h4>
+    <p5 style="font-family: Calibri Light">/get_max_duration/AÑO/PLATAFORMA/TIPO</p5><br>
+    <p5 style="font-family: Calibri Light">Por ej: /get_max_duration/2018/Hulu/min</p5>
     <br>
-    <h4 style="font-family: Verdana">Para conocer la cantidad de películas y series por plataforma:</h4>
-    <p5 style="font-family: Verdana">/get_count_platform/PLATAFORMA</p5><br>
-    <p5 style="font-family: Verdana">Por ej: /get_count_platform/Amazon<p5>
+    <h4 style="font-family: Calibri Light">Para conocer la cantidad de películas y series por plataforma:</h4>
+    <p5 style="font-family: Calibri Light">/get_count_platform/PLATAFORMA</p5><br>
+    <p5 style="font-family: Calibri Light">Por ej: /get_count_platform/Amazon<p5>
     <br>
-    <h4 style="font-family: Verdana">Para conocer la cantidad de veces que se repite un género y plataforma con mayor frecuencia del mismo:</h4>
-    <p5 style="font-family: Verdana">/get_listedin/GENERO</p5><br>
-    <p5 style="font-family: Verdana">Por ej: /get_listedin/Comedy</p5>
+    <h4 style="font-family: Calibri Light">Para conocer la cantidad de veces que se repite un género y plataforma con mayor frecuencia del mismo:</h4>
+    <p5 style="font-family: Calibri Light">/get_listedin/GENERO</p5><br>
+    <p5 style="font-family: Calibri Light">Por ej: /get_listedin/Comedy</p5>
     <br>
-    <h4 style="font-family: Verdana">Para conocer el actor/actriz con mayor número de apariciones según año y plataforma:</h4>
-    <p5 style="font-family: Verdana">/get_actor/PLATAFORMA/AÑO</p5><br>
-    <p5 style="font-family: Verdana">Por ej: /get_actor/Netflix/2018</p5>
+    <h4 style="font-family: Calibri Light">Para conocer el actor/actriz con mayor número de apariciones según año y plataforma:</h4>
+    <p5 style="font-family: Calibri Light">/get_actor/PLATAFORMA/AÑO</p5><br>
+    <p5 style="font-family: Calibri Light">Por ej: /get_actor/Netflix/2018</p5>
     <br>
     <br>
-    <h4 style="font-family: Verdana">Para volver a la página de inicio, puede hacer hacia atrás.</h4>
+    <h4 style="font-family: Calibri Light">Para volver a la página de inicio, puede hacer hacia atrás.</h4>
 </body>
 </html>"""
 
