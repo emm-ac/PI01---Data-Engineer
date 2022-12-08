@@ -77,8 +77,7 @@ def get_count_platform(plataforma):
     if (plataforma in lista_plataforma):
         gcp = datos[datos['Plataforma'] == plataforma]
         gcp = gcp.groupby(['Plataforma'])['Tipo'].value_counts().to_dict()
-        #gcp = pd.DataFrame(gcp)
-        return gcp
+        return ('El resultado es ' ) + str(gcp)
     else:
         return (f'Los parámetros ingresados son erróneos.')
 
@@ -92,7 +91,7 @@ def get_listedin(genero):
     gl.reset_index(inplace=True)
     gl.sort_values(by='Titulo', inplace=True, ascending=False)
     gl.reset_index(inplace=True, drop=True)
-    return (f' El género {genero} se repite con mayor frecuencia en la plataforma {gl.iloc[0]} veces.')
+    return ('El género ') + str(genero) + (' se repite ') + str(gl.loc[1,'Titulo']) + (' veces en la plataforma ') + str(gl.loc[1,'Plataforma'])
 
 
 
