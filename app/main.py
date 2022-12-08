@@ -18,24 +18,24 @@ async def index():
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HENRY Data Science - Proyecto Individual Data Engineer</title>
 </head>
-<body>
+<body style="background-color: #F3F3F3;">
     <br>
-    <h2 style="font-family: Calibri Light">API con información de series y películas en las plataformas de Amazon, Disney+, Hulu y Netflix</h2>
-    <h3 style="font-family: Calibri Light">Cómo hacer las consultas:</h3>
+    <h2 style="font-family: Calibri Light; color: #F95F50">API con información de series y películas en las plataformas de Amazon, Disney+, Hulu y Netflix</h2>
+    <h3 style="font-family: Calibri Light; color: #F95F50">Cómo hacer las consultas:</h3>
     <br>
-    <h4 style="font-family: Calibri Light">Para conocer la máxima duración por año, por plataforma y según tipo de film (película= min / serie= season):</h4>
+    <h3 style="font-family: Calibri Light; color: #333961">Para conocer la máxima duración por año, por plataforma y según tipo de film (película= min / serie= season):</h3>
     <p5 style="font-family: Calibri Light">/get_max_duration/AÑO/PLATAFORMA/TIPO</p5><br>
     <p5 style="font-family: Calibri Light">Por ej: /get_max_duration/2018/Hulu/min</p5>
     <br>
-    <h4 style="font-family: Calibri Light">Para conocer la cantidad de películas y series por plataforma:</h4>
+    <h3 style="font-family: Calibri Light; color: #333961">Para conocer la cantidad de películas y series por plataforma:</h3>
     <p5 style="font-family: Calibri Light">/get_count_platform/PLATAFORMA</p5><br>
     <p5 style="font-family: Calibri Light">Por ej: /get_count_platform/Amazon<p5>
     <br>
-    <h4 style="font-family: Calibri Light">Para conocer la cantidad de veces que se repite un género y plataforma con mayor frecuencia del mismo:</h4>
+    <h3 style="font-family: Calibri Light; color: #333961">Para conocer la cantidad de veces que se repite un género y plataforma con mayor frecuencia del mismo:</h3>
     <p5 style="font-family: Calibri Light">/get_listedin/GENERO</p5><br>
     <p5 style="font-family: Calibri Light">Por ej: /get_listedin/Comedy</p5>
     <br>
-    <h4 style="font-family: Calibri Light">Para conocer el actor/actriz con mayor número de apariciones según año y plataforma:</h4>
+    <h3 style="font-family: Calibri Light; color: #333961">Para conocer el actor/actriz con mayor número de apariciones según año y plataforma:</h3>
     <p5 style="font-family: Calibri Light">/get_actor/PLATAFORMA/AÑO</p5><br>
     <p5 style="font-family: Calibri Light">Por ej: /get_actor/Netflix/2018</p5>
     <br>
