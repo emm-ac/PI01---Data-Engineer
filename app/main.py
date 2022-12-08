@@ -27,7 +27,7 @@ async def index():
     <br>
     <h4 style="font-family: Verdana">Para conocer la máxima duración por año, por plataforma y según tipo de film (película= min / serie= season):</h4>
     <p5 style="font-family: Verdana">/get_max_duration/AÑO/PLATAFORMA/TIPO</p5><br>
-    <p5 style="font-family: Verdana">Por ej: /get_max_duration/2018/Hulu/min.</p5>
+    <p5 style="font-family: Verdana">Por ej: /get_max_duration/2018/Hulu/min</p5>
     <br>
     <h4 style="font-family: Verdana">Para conocer la cantidad de películas y series por plataforma:</h4>
     <p5 style="font-family: Verdana">/get_count_platform/PLATAFORMA</p5><br>
