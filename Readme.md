@@ -16,12 +16,26 @@ Todo lo anterior dentro del marco de tiempo de una semana laboral, debiendo resp
 
 ## **Trabajo realizado**
 
-Fueron provistos los listados de cuatro plataformas de streaming (Amazon, Disney+, Hulu y Netflix), debiendo realizar las tareas propias del EDA: analizar la composición de cada una, realizar una limpieza de datos innecesarios, normalizar los tipos de datos y sus diferentes variaciones, y por último agruparlas en una única tabla diferenciando la plataforma de procedencia de cada dato.
+Fueron provistos los listados de cuatro plataformas de streaming (Amazon, Disney+, Hulu y Netflix), debiendo realizar las tareas propias del EDA: analizar la composición de cada una, realizar una limpieza de datos innecesarios, normalizar los datos y agruparlas en una única tabla diferenciando la plataforma de procedencia de cada dato.
 
-Seguidamente se debieron realizar funciones que sean capaces de responder cuantro consultas diferentes sobre los datos en cuestión, pudiendo extraer así información de ellos.
+Luego se debieron realizar funciones capaces de responder cuantro consultas, pudiendo extraer así información de los datos.
+Las consultas fueron:
 
-Todo debió ingestarse una API dentro de un contenedor de Docker.
-Como desafío adicional, se realizó un deployment en Mogenius. 
++ Máxima duración según tipo de film (película/serie), por plataforma y por año:
+    El request debe ser: get_max_duration(año, plataforma, [min o season])
+
++ Cantidad de películas y series (separado) por plataforma
+    El request debe ser: get_count_plataform(plataforma)  
+  
++ Cantidad de veces que se repite un género y plataforma con mayor frecuencia del mismo.
+    El request debe ser: get_listedin('genero')  
+    Como ejemplo de género pueden usar 'comedy', el cuál deberia devolverles un cunt de 2099 para la plataforma de amazon.
+
++ Actor que más se repite según plataforma y año.
+  El request debe ser: get_actor(plataforma, año)
+
+La última etapa consistió en crear una API que corra localmente con Uvicorn y luego ingestarla dentro de un contenedor de Docker.
+Como desafío adicional, se propuso realizar el deployment en Mogenius, obteniendo un acceso web a la API. 
 
 ## **Contenido del repositorio**
 
